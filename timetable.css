@@ -1,4 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+a {
+    text-decoration: none;
+}
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -78,10 +81,7 @@
   padding: 0px;
   float: top;
 }
-/*cover image*/
-.dtuimg {
-    width: 100%;
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -89,13 +89,47 @@
   .sidenav a {font-size: 18px;}
     .openbtn {content: '/2807';}
     }
+/*****time table ******
+.table h1 {
+    text-align: center;
+    padding-left: 50px !important;
+}
+.ee1,.ee2, .ee3, .ee4, .ee5 {
+    display: none;
+}
+.eetable1, .eetable2, .eetable3, .eetable4, .eetable5 {
+    display: block;
+}
+.table .table-list ul.tableitem li a {
+    padding-left: 10px;
+    text-decoration: none !important;
+}
+.table .table-list ul.tableitem li  {
+    list-style-type: none;
+    
+}
+.table .table-list ul.tableitem li img {
+    width: 100%
+}
+.table .table-list ul {
+    padding-left: 10px;
+    margin: 0;
+}
+.table {
+    margin-bottom: 0 !important;
+}*/
+
+.table li img.image{
+    width: 100%;
+    display: none;
+}
+.table li img.image1{
+    width: 100%;
+    display: block;
+}
 
 /************Footere*********/
 
-*{
-	padding:0;
-	margin:0;
-}
 
 html{
 	background-color: #eaf0f2;
@@ -124,7 +158,6 @@ header h2{
 header span{
 	color: #3F71EA;
 }
-
 
 /* The footer is fixed to the bottom of the page */
 
@@ -306,3 +339,5 @@ footer{
 	}
 
 }
+
+

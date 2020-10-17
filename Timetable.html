@@ -7,7 +7,7 @@
   <title>EEngineers</title>
   <meta name="description" content="An interactive getting started guide for Brackets.">
   <link rel="stylesheet" href="timetable.css">
-  <script src="main.js"></script>
+  
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -44,24 +44,51 @@
   </div>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index-1.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="Timetable.html">TIME TABLE</a>
     <a href="#">BOOKS</a>
     <a href="#">STUDY MATERIALS</a>
     <a href="#">PREVIOUS YEARS</a>
   </div>
-<div>
-  <h1>Time Tables</h1>
-  <div>
-    <ul>
-      <li><a href="#">EE-1 Time Table</a></li>
-      <li>EE-2 Time Table</li>
-      <li>EE-3 Time Table</li>
-      <li>EE-4 Time Table</li>
-      <li>EE-5 Time Table</li>
+<div class="table">
+    <h1><span class="icon"></span>Time Tables</h1>
+ <!-- <div class="table-list">
+    <ul class="tableitem" id="eetable">
+      <li><a href="javascript:void(0);" onclick="showtable()">EE-1</a>
+        <div class="ee1"><img src="Img/ee1.png">
+        <a href="https://drive.google.com/file/d/1DMWI9ymDNIawdJwapWG9c-DLeL7si64u/view?usp=drivesdk">Download</a></div></li>
+      <li><a href="javascript:void(0);" onclick="showtable()">EE-2</a>
+        <div class="ee2"><img src="Img/ee2.png">
+      <a href="https://drive.google.com/file/d/1DPL6SxNUD2_HfvU7Q2zOFoyhvAdtUGmp/view?usp=drivesdk">Download</a></div></li>
+      <li><a href="javascript:void(0);" onclick="showtable()">EE-3</a>
+         <div class="ee3"><img src="Img/ee3.png">
+             <a href="https://drive.google.com/file/d/1DQRXDr1xkhy6tsNYE7rBpfpALcmzJlaK/view?usp=drivesdk">Download</a></div></li>
+      <li><a href="javascript:void(0);" onclick="showtable()">EE-4</a>
+         <div class="ee4"><img src="Img/ee4.png">
+             <a href="https://drive.google.com/file/d/1DS--D0X0OHpfFV6eobcOaRkMe1GvGmyx/view?usp=drivesdk">Download</a></div></li>
+      <li><a href="javascript:void(0);" onclick="showtable()">EE-5</a>
+         <div class="ee5"><img src="Img/ee5.png">
+             <a href="https://drive.google.com/file/d/1DSFHS9pF3lEqBMjNNxyTFZgEU7geScb7/view?usp=drivesdk">Download</a></div></li>
     </ul>
   </div>
-</div>
+</div>-->
+   <ul class="table" id="ee">
+    <li>
+       <a href="javascript:void(0);" onclick="timetable()">EE1</a>
+       <img class="image" src="Img/ee1.png"></li>
+       <li>
+       <a href="javascript:void(0);" onclick="timetable()">EE2</a>
+       <img class="image" src="Img/ee2.png"></li>
+       <li>
+       <a href="javascript:void(0);" onclick="timetable()">EE3</a>
+       <img class="image" src="Img/ee3.png"></li>
+       <li>
+       <a href="javascript:void(0);" onclick="timetable()">EE4</a>
+       <img class="image" src="Img/ee4.png"></li>
+       <li>
+       <a href="javascript:void(0);" onclick="timetable()">EE5</a>
+       <img class="image" src="Img/ee5.png"></li>
+    </ul>
 <footer class="footer-distributed">
 
  
@@ -71,7 +98,7 @@
 		<h3>E<span>Engineers</span></h3>
  
 		<p class="footer-links">
-		<a href="#">Home</a>
+		<a href="index.html">Home</a>
 	·
 		<a href="#">Blog</a>
 	·
@@ -125,3 +152,7 @@
 		</div>
  
 		</footer>
+    </div>
+    <script src="main.js"></script>
+    </body>
+</html>

@@ -8,3 +8,10 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+function timetable(){
+    var x=document.getElementById("ee");
+    if(x.className==="image"){
+        x.className="image1";
+    }
+    
+}
